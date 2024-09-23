@@ -1,0 +1,160 @@
+.footer-main{
+    margin: 120px 0px;
+    padding: 70px 0px;
+    border-radius: 48px 48px 0px 0px;
+    background: linear-gradient(180deg, #4A008F 0%, rgba(74, 0, 143, 0) 100%);
+
+}
+.profile-pic img{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+}
+.profile-name{
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.profile-description{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.know-more{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 14px;
+    margin:20px auto;
+}
+.know-more div{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(174deg, #4A008F -509.7%, rgba(217, 217, 217, 0) 106.55%); */
+    border: 1px solid;
+    border-image-source: linear-gradient(243.82deg, #FFFFFF -1.74%, rgba(0, 0, 0, 0) 66.48%);
+    background: linear-gradient(180deg, #4A008F 0%, rgba(74, 0, 143, 0) 100%);
+}
+@media (max-width:320px){
+    .profile-section{
+        border-top: 1px solid white;
+        
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .profile-pic{
+        display: flex;
+        justify-content:center ;
+        margin-top: 20px;
+    }
+    .profile-description{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 11px;
+        padding: 0px 30px;
+    }
+}
+
+.footer-secoend-column{
+display: flex;
+
+flex-direction: column;
+padding: 0px 45px;
+}
+
+.mail-head{
+    font-size: 24px;
+    font-weight: 700;
+    color:white;
+}
+.mail-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.mail-box Input{
+border-radius: 9px;
+margin: 10px 0px;
+height: 38px;
+}
+
+.terms{
+    display: flex; 
+    align-items: first baseline;
+    gap: 10px;
+}
+.terms .tc{
+    color:white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.terms .tc .tc-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.mail-submit{
+    background: rgba(75, 51, 227, 1) !important;
+color: #FFFFFF !important;
+border-radius: 9px !important;
+border: 1px dotted white !important;
+width: 125px !important;
+font-size: 16px !important;
+font-weight: 700 !important;
+display: flex;
+align-items: center;
+}
+#mail-submit{
+    margin: 10px 0px;
+}
+.white-logo{
+}
+.white-logo img{
+width: 100%;
+height: 100%;
+}
+@media(max-width:320px){
+    .mail-head{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    .mail-description{
+        font-size: 11px;
+    }
+    .terms .tc{
+        font-size: 11px;
+    }
+    .terms .tc .tc-text{
+        font-size: 10px;
+    }
+    #mail-submit{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .footer-secoend-column{
+        padding: 0px 25px;
+    }
+    .white-logo{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .white-logo img{
+        width: 130px;
+        height: 130px;
+    }
+}

@@ -1,0 +1,22 @@
+.vr-main .vr-title{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+.vr-title{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 36px;
+    color: white;
+    font-family: Roboto;
+}
+@media(max-width:320px){
+    .vr-title{
+        font-size: 16px;
+    }
+}
+
+.vr-image{
+    width: 100%;
+    margin: 10px auto;
+}

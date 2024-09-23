@@ -1,0 +1,57 @@
+.header-main {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+/* Desktop Menu Styling */
+.desktop-menu button {
+    background: transparent;
+    border: 0;
+    color: white;
+}
+
+/* Show desktop menu on large screens */
+@media (min-width: 768px) {
+    .desktop-menu {
+        display: block;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+
+/* Show mobile menu on small screens */
+@media (max-width: 767px) {
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .mobile-menu button{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        font-size: 24px;
+        color: white;
+        background: none;
+    }
+}
+@media(max-width:320px){
+    .menu-icon{
+        background: none !important;
+        border: 0 !important;
+        color:white !important;
+    }
+}

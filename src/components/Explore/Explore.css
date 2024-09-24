@@ -6,9 +6,10 @@
 
 .explore-button {
     width: 300px;
+    border-radius: 9px;
     height: 64px !important;
     font-size: 26px !important;
-    border: 1px dotted white !important;
+    border: 2px dashed white !important;
     color: white !important;
     background: #1677ff !important;
 }
@@ -127,6 +128,7 @@
 
 @media (max-width: 768px) {
     .explore-main .explore-content {
+        font-weight: 400;
         font-size: 16px;
     }
 }

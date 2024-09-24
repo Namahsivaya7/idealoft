@@ -1,5 +1,5 @@
 .footer-main{
-    margin: 120px 0px;
+    margin: 120px 0px 0px 0px;
     padding: 70px 0px;
     border-radius: 48px 48px 0px 0px;
     background: linear-gradient(180deg, #4A008F 0%, rgba(74, 0, 143, 0) 100%);
@@ -108,12 +108,12 @@ height: 38px;
     background: rgba(75, 51, 227, 1) !important;
 color: #FFFFFF !important;
 border-radius: 9px !important;
-border: 1px dotted white !important;
+border: 2px dashed white !important;
 width: 125px !important;
 font-size: 16px !important;
 font-weight: 700 !important;
-display: flex;
-align-items: center;
+display: flex !important;
+align-items: center !important;
 }
 #mail-submit{
     margin: 10px 0px;
@@ -161,7 +161,7 @@ height: 100%;
 }
 @media (max-width: 768px) {
     .footer-main {
-        margin: 60px 0px;
+        margin: 60px 0px 0px 0px;
         padding: 50px 20px;
         border-radius: 40px 40px 0 0;
     }
@@ -202,7 +202,7 @@ height: 100%;
     }
 
     .footer-secoend-column {
-        padding: 0 30px;
+        padding: 0 20px 0 0;
     }
 
     .mail-head {
@@ -220,10 +220,11 @@ height: 100%;
 
     .terms {
         gap: 8px;
+        margin-top: 15px;
     }
 
     .terms .tc {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .terms .tc .tc-text {
@@ -232,10 +233,15 @@ height: 100%;
 #mail-submit{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
     .mail-submit {
         font-size: 14px;
         width: 115px;
+        border: 2px dashed white;
+        display: flex !important;
+        align-items: center !important;
     }
 
     .white-logo img {

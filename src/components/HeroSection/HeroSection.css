@@ -6,12 +6,13 @@
     color: gray;
     font-size: 24px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 .left-section button{
     margin: 40px 0;
-    border: 1px dotted white;
+    border: 2px dashed white;
     background: rgba(75, 51, 227, 1);
+    color: white;
     border-radius: 6px;
 }
 .vector-image{
@@ -53,7 +54,7 @@
 /* Responsive for devices between 321px and 768px */
 @media (min-width: 321px) and (max-width: 768px) {
     .left-section .title {
-        font-size: 36px;
+        font-size: 32px;
         display: flex;
         justify-content: center;
     }
@@ -63,15 +64,14 @@
         justify-content: center;
         padding: 0 15px;
     }
+    
     .section-button {
         display: flex;
         justify-content: center;
     }
     .section-button button {
-        /* margin: 30px 0;
-        padding: 12px 25px; */
         color: white;
-        border: 1px dotted white;
+        border: 2px dotted white;
     }
     .vector-image{
         display: none;

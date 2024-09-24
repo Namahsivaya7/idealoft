@@ -15,10 +15,10 @@ export default function HeroSection() {
               <br /> how the world of VR is evolving
             </Typography.Text>
             <div className="section-button">
-              <Button type="primary">Know more</Button>
+              <Button className="know-more">Know more</Button>
               {/* <div className="vector-div"> */}
                 <img
-                src="vector 40.png"
+                src="Vector40.png"
                 alt="vector image"
                 className="vector-image"
               />

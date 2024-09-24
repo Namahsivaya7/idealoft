@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="footer-main">
       <Row>
         <Col lg={{span:0,order:1}} xs={{span:1,order:1}}></Col>
-        <Col lg={{ order: 2, span: 6 }} xs={{ order: 3, span: 22, offset: 1 }}>
+        <Col lg={{ order: 2, span: 6 }} xs={{ order: 3, span: 22, offset: 1 }} sm={{ span: 20, offset: 2 }}>
           <div className="profile-section">
             <div className="profile-pic">
               <img src="jonather-vader-profile.png" />
@@ -30,7 +30,7 @@ export default function Footer() {
         <Col lg={{span:1,order:3}} xs={{order:0,span:0}}>
           <div style={{ height: "100%", borderRight: "1px solid white" }}></div>
         </Col>
-        <Col lg={{ order: 4, span: 7 }} xs={{ order: 1, span: 22, offset: 1 }}>
+        <Col lg={{ order: 4, span: 7 }} xs={{ order: 1, span: 22, offset: 1 }} sm={{ span: 20, offset: 2 }}>
           <div className="footer-secoend-column">
             <Typography className="mail-head">MAILING LIST</Typography>
             <Typography className="mail-description">
@@ -73,7 +73,7 @@ export default function Footer() {
             </div>
           </div>
         </Col>
-        <Col lg={{ order: 5, span: 7 }} xs={{ order: 4, span: 22}}>
+        <Col lg={{ order: 5, span: 7 }} xs={{ order: 4, span: 22}} sm={{ span: 20, offset: 2 }}>
           <div className="white-logo">
             <img src="logo-white.svg" style={{width:"100%"}}/>
           </div>

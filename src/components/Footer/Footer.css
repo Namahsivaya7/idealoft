@@ -158,3 +158,88 @@ height: 100%;
         height: 130px;
     }
 }
+@media (max-width: 768px) {
+    .footer-main {
+        margin: 60px 0px;
+        padding: 50px 20px;
+        border-radius: 40px 40px 0 0;
+    }
+.profile-pic, .profile-name,.know-more{
+    display: flex;
+    justify-content: center;
+}
+.profile-section{
+    margin: 30px 0px;
+    padding: 30px 0px 25px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+    .profile-pic img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .profile-name {
+        font-size: 17px;
+        margin: 8px 0;
+    }
+
+    .profile-description {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .know-more {
+        font-size: 12px;
+        gap: 15px;
+        margin: 15px auto;
+    }
+
+    .know-more div {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-secoend-column {
+     
+        padding: 0 30px;
+    }
+
+    .mail-head {
+        font-size: 18px;
+    }
+
+    .mail-description {
+        font-size: 14px;
+    }
+
+    .mail-box Input {
+        height: 35px;
+        margin: 8px 0;
+    }
+
+    .terms {
+        gap: 8px;
+    }
+
+    .terms .tc {
+        font-size: 14px;
+    }
+
+    .terms .tc .tc-text {
+        font-size: 12px;
+    }
+#mail-submit{
+    display: flex;
+    justify-content: center;
+}
+    .mail-submit {
+        font-size: 14px;
+        width: 115px;
+    }
+
+    .white-logo img {
+        width: 150px;
+        height: 150px;
+    }
+}

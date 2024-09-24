@@ -76,3 +76,11 @@
   background: rgba(143, 0, 255, 1); /* Color of the progress bar */
   transition: width 0.5s ease; /* Smooth transition */
 }
+@media (max-width: 768px){
+.product-title{
+
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+}

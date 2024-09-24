@@ -25,11 +25,13 @@ export default function Explore() {
   };
   return (
     <>
-      <div className="explore-button-section">
-        <button className="explore-button" onClick={toggleMore}>
-          {showMore ? "Show Less" : "Explore More"}{" "}
-        </button>
-      </div>
+      {!showMore && (
+        <div className="explore-button-section">
+          <button className="explore-button" onClick={toggleMore}>
+            Explore More
+          </button>
+        </div>
+      )}
       {showMore && (
         <div>
           <Row>

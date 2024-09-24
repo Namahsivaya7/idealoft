@@ -146,7 +146,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 100px;
+    margin: 50px 100px 0px 100px;
     height: 210px;
     border-radius: 8px;
     box-shadow: 1px 1px 6px 0px rgba(74, 0, 143, 1);
@@ -156,6 +156,7 @@
     .explore-first-section {
         margin: 0 !important;
         height: 190px;
+        margin-top: 30px !important;
     }
 }
 

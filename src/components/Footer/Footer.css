@@ -67,9 +67,9 @@ border-radius: 50%;
 
 .footer-secoend-column{
 display: flex;
-
 flex-direction: column;
 padding: 0px 45px;
+
 }
 
 .mail-head{
@@ -119,6 +119,7 @@ align-items: center;
     margin: 10px 0px;
 }
 .white-logo{
+    padding: 20px;
 }
 .white-logo img{
 width: 100%;
@@ -201,7 +202,6 @@ height: 100%;
     }
 
     .footer-secoend-column {
-     
         padding: 0 30px;
     }
 

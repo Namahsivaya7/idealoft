@@ -5,7 +5,7 @@ import './Header.css'
 
 export default function Header() {
     const [visible, setVisible] = useState(false);
-
+const[activeButton, setActiveButton] = useState("");
     const showDrawer = () => {
         setVisible(true);
     };
@@ -13,6 +13,9 @@ export default function Header() {
     const onClose = () => {
         setVisible(false);
     };
+    const handleButtonClick = (buttonName) => {
+        setActiveButton(buttonName);
+      };
 
     return (
         <div className="header-main" style={{width:"100%"}}>
@@ -27,9 +30,9 @@ export default function Header() {
                 <Col lg={14}></Col>
                 <Col lg={5} xs={0}>
                     <div className="desktop-menu">
-                        <Button>Home</Button>
-                        <Button>About Us</Button>
-                        <Button>Products</Button>
+                        <Button onClick={()=>handleButtonClick("Home")} id={activeButton === "Home" ? "active" : ""}>Home</Button>
+                        <Button onClick={()=>handleButtonClick("About")} id={activeButton === "About" ? "active" : ""}>About Us</Button>
+                        <Button onClick={()=>handleButtonClick("Products")} id={activeButton === "Products" ? "active" : ""}>Products</Button>
                     </div>
                 </Col>
                 <Col xs={10}></Col>

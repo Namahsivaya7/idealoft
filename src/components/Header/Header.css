@@ -14,8 +14,14 @@
 
 /* Desktop Menu Styling */
 .desktop-menu button {
-    background: transparent;
-    border: 0;
+    background: none !important;
+    border: 0 !important;
+    color: white;
+    
+}
+
+ .desktop-menu #active{
+    border-bottom: 2px solid white !important;
     color: white;
 }
 

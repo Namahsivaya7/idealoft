@@ -7,7 +7,8 @@ export default function Footer() {
 
   const [email, setEmail] = useState(""); 
   const [emailValid, setEmailValid] = useState(false);
-  const [checkboxValid, setCheckboxValid] = useState(false); 
+  const [checkboxValid, setCheckboxValid] = useState(false);
+  const[optionalCheck, setOptionalCheck] = useState(false); 
 
   const updateEmail = (value) => {
     setEmail(value);
@@ -23,9 +24,13 @@ export default function Footer() {
     setCheckboxValid(checked); 
   };
 
+  const optionalCheckbox= (checked) =>{
+    setOptionalCheck(checked);
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault(); 
-    console.log("Form submitted",emailValid,checkboxValid);
+    console.log("Form submitted",emailValid,checkboxValid,optionalCheck);
 
     const username = email.split('@')[0].trim();
     console.log("username", username)
@@ -50,6 +55,7 @@ export default function Footer() {
         setEmail("");
         setEmailValid(false)
       setCheckboxValid(false);
+      setOptionalCheck(false)
         break;
 
       default:
@@ -108,7 +114,7 @@ export default function Footer() {
               </Typography>
             </div>
             <div className="terms">
-              <Checkbox type="checkbox"/>
+              <Checkbox type="checkbox" checked={optionalCheck} onChange={(e) => optionalCheckbox(e.target.checked)}/>
               <Typography className="tc">
                 {" "}
                 I allow sharing with third-party partners

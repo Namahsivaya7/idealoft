@@ -45,6 +45,7 @@ export default function Header() {
                             placement="right"
                             onClose={onClose}
                             open={visible}
+                            className="header-drawer"
                         >
                             <Button block>Home</Button>
                             <Button block>About Us</Button>

@@ -1,8 +1,62 @@
-import { Button, Checkbox, Col, Input, Row, Typography } from "antd";
+import { Button, Checkbox, Col, Input, message, Row, Typography } from "antd";
 import "./Footer.css";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { useState } from "react";
 
 export default function Footer() {
+
+  const [email, setEmail] = useState(""); 
+  const [emailValid, setEmailValid] = useState(false);
+  const [checkboxValid, setCheckboxValid] = useState(false); 
+
+  const updateEmail = (value) => {
+    setEmail(value);
+    validateEmail(value);
+  };
+  
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmailValid(emailRegex.test(email)); 
+  };
+ 
+  const updateCheckbox = (checked) => {
+    setCheckboxValid(checked); 
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+    console.log("Form submitted",emailValid,checkboxValid);
+
+    const username = email.split('@')[0].trim();
+    console.log("username", username)
+
+    const formStatus = `${emailValid}-${checkboxValid}`; 
+
+    switch (formStatus) {
+      case "false-false":
+        message.error("Enter Valid Email and accept T&C");
+        break;
+
+      case "false-true":
+        message.error("Enter Valid Email");
+        break;
+
+      case "true-false":
+        message.error("Accept T&C.");
+        break;
+
+      case "true-true":
+        message.success(`Thank you for submitting your email! ${username}`);
+        setEmail("");
+        setEmailValid(false)
+      setCheckboxValid(false);
+        break;
+
+      default:
+        message.error("Unexpected validation state.");
+    }
+  };
+
   return (
     <div className="footer-main">
       <Row>
@@ -38,10 +92,11 @@ export default function Footer() {
               and offers
             </Typography>
             <div className="mail-box">
-              <Input placeholder="Email ID" />
+              <Input placeholder="Email ID" type="email" name="email" value={email}
+            onChange={(e) => updateEmail(e.target.value)} required/>
             </div>
             <div className="terms">
-              <Checkbox />
+              <Checkbox type="checkbox" checked={checkboxValid} onChange={(e)=>updateCheckbox(e.target.checked)} required/>
               <Typography className="tc">
                 {" "}
                 I agree to receive emails
@@ -53,7 +108,7 @@ export default function Footer() {
               </Typography>
             </div>
             <div className="terms">
-              <Checkbox />
+              <Checkbox type="checkbox"/>
               <Typography className="tc">
                 {" "}
                 I allow sharing with third-party partners
@@ -66,7 +121,7 @@ export default function Footer() {
               </Typography>
             </div>
             <div id="mail-submit">
-              <Button className="mail-submit">
+              <Button className="mail-submit" onClick={handleSubmit}>
                 SUBMIT
                 <ArrowRightOutlined />
               </Button>

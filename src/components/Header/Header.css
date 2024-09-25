@@ -48,10 +48,17 @@
         background: none;
     }
 }
-@media(max-width:320px){
+@media(max-width:768px){
     .menu-icon{
         background: none !important;
         border: 0 !important;
         color:white !important;
+    }
+    .header-drawer Button{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 10px 0;*/ 
     }
 }
